@@ -45,5 +45,13 @@ public class Controller
 		icons = new ImageIcon[3];
 		
 		guitarArray = new Guitar[3];
+		
+		for (int index = 0; index < guitarArray.length; index += 1)
+		{
+			if(index % 2 == 0)
+			{
+				guitarArray[index] = new Guitar();
+			}
+		}
 	}
 }
