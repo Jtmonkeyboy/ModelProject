@@ -28,7 +28,7 @@ public class Controller
 	{
 		buildTheLists();
 		arrays();
-		JOptionPane.showMessageDialog(null, myGuitar);
+		JOptionPane.showMessageDialog(null, myGuitar,"Description", JOptionPane.INFORMATION_MESSAGE, icons[0]);
 	}
 	
 	//This method is called to create the array lists.
@@ -42,7 +42,9 @@ public class Controller
 	//This method is called to create the arrays.
 	public void arrays()
 	{
-		icons = new ImageIcon[3];
+		icons = new ImageIcon[6];
+		
+		icons[0] = new ImageIcon(getClass().getResource("/view/images/spongegar.png"));
 		
 		guitarArray = new Guitar[3];
 		
